@@ -20,7 +20,7 @@ client.connect((err) => {
     if (err) {
       return console.error("error running query", err);
     }
-    console.log(result.rows[0]); //output: 1
+    console.log(`Searching ...\nFound 1 person by the name '${result.rows[0].last_name}`); //output: 1
     client.end();
   });
 });
